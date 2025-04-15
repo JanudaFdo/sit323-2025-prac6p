@@ -26,7 +26,7 @@ This project demonstrates how to containerize a Node.js application and deploy i
 Ensure Docker is running on your system.
 
 ```docker build -t janudafernando/node-app:v1 .``` <br>
-```docker login```
+```docker login```<br>
 ```docker push janudafernando/node-app:v1```
 
 
@@ -36,12 +36,12 @@ Ensure Docker is running on your system.
 
 # 4️⃣ Deploy Application to Kubernetes
 Apply Deployment and Service Files
-```kubectl apply -f deployment.yaml```
+```kubectl apply -f deployment.yaml```<br>
 ```kubectl apply -f service.yaml```
 
 
 # 5️⃣ Verify the Deployment
-```kubectl get pods```
+```kubectl get pods```<br>
 ```kubectl get services```
 
 
