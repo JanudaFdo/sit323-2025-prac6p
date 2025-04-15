@@ -35,7 +35,7 @@ Ensure Docker is running on your system.
 
 
 # 4️⃣ Deploy Application to Kubernetes
-Apply Deployment and Service Files
+Apply Deployment and Service Files<br>
 ```kubectl apply -f deployment.yaml```<br>
 ```kubectl apply -f service.yaml```
 
