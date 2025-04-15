@@ -19,33 +19,30 @@ This project demonstrates how to containerize a Node.js application and deploy i
 ## 🚀 Project Setup and Instructions
 
 # 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/sit323-2025-prac6p.git
+```git clone https://github.com/yourusername/sit323-2025-prac6p.git```
 
 
 # 2️⃣ Build and Push Docker Image
 Ensure Docker is running on your system.
 
-docker build -t yourusername/node-app:v1 .
-docker login
-docker push yourusername/node-app:v1
+```docker build -t yourusername/node-app:v1 .```
+```docker login```
+```docker push yourusername/node-app:v1```
 
 
-# 3️⃣ Start Kubernetes Cluster (Minikube Example)
-minikube start
+# 3️⃣ Start Kubernetes Cluster
+```minikube start```
 
 
 # 4️⃣ Deploy Application to Kubernetes
 Apply Deployment and Service Files
-
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+```kubectl apply -f deployment.yaml```
+```kubectl apply -f service.yaml```
 
 
 # 5️⃣ Verify the Deployment
-kubectl get pods
-kubectl get services
+```kubectl get pods```
+```kubectl get services```
 
-# 6️⃣ Access the Application
-If using Minikube:
-minikube service node-app-service
+
 
